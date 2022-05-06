@@ -1,0 +1,122 @@
+.body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(https://images.vexels.com/media/users/3/158894/raw/fa17457aabc68d703232173fe4470645-diseno-de-fondo-de-seguridad.jpg?w=1506&fmt=webp);
+  background-size: cover;
+  font-family: 'Georgia';
+  color: blue;
+  background-position: center;
+  text-align: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.article__title{
+  color: rgb(29, 32, 32);
+  font-family: cursive;   
+},
+.article__keywords{
+  color: rgb(176, 189, 223);
+},
+.article__presentation{
+  color: aquamarine;
+},
+.skills__title {
+  letter-spacing: 1px;
+  margin: 0;
+}
+
+.main {
+  background-color: hsla(186, 18%, 77%, 0.75);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 18rem;
+  padding: 2rem;
+  border-radius: 1rem;
+}
+
+.header {
+  display: flex;
+}
+
+.header__professional-image-container {
+  display: flex;
+  max-width: 256px;
+  margin: 0 auto;
+}
+
+.header__professional-image {
+  width: 100%;
+  border-radius: 50%;
+}
+
+.article {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.article__title {
+  font-size: 3rem;
+}
+
+.article__keywords {
+  font-size: 1.25rem;
+}
+
+.article__presentation {
+  font-size: 1rem;
+}
+
+.article__presentation::before {
+  content: '☺';
+}
+
+.article__presentation::after {
+  content: '☺';
+}
+
+.footer {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.footer__link-icon-container {
+  display: flex;
+  transition: all 0.3s;
+  max-width: 2rem;
+}
+
+.footer__link-icon-container:hover {
+  transform: scale(1.25);
+}
+
+.footer__link-icon {
+  width: 100%;
+}
+
+@media (min-width: 854px) {
+  .main {
+    max-width: 32rem;
+    gap: 2rem;
+  }
+
+  .header__professional-image-container {
+    max-width: 20rem;
+  }
+
+  .article__title {
+    font-size: 3rem;
+  }
+
+  .article__keywords {
+    font-size: 1.5rem;
+  }
+
+  .article__presentation {
+    font-size: 1.5rem;
+  }
+}
